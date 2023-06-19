@@ -1,3 +1,3 @@
-/home/joy/project/SAT-solver/build/CMakeFiles/rebuild_cache.dir
-/home/joy/project/SAT-solver/build/CMakeFiles/SatSolver.dir
-/home/joy/project/SAT-solver/build/CMakeFiles/edit_cache.dir
+/home/joy/project/tiny_sat_solver/build/CMakeFiles/rebuild_cache.dir
+/home/joy/project/tiny_sat_solver/build/CMakeFiles/satSolver.dir
+/home/joy/project/tiny_sat_solver/build/CMakeFiles/edit_cache.dir

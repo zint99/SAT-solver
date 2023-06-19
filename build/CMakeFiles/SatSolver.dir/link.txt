@@ -1,1 +1,0 @@
-/usr/bin/c++   -O0 -Wall -g -ggdb   CMakeFiles/SatSolver.dir/main.cpp.o CMakeFiles/SatSolver.dir/DPLL.cpp.o  -o SatSolver 

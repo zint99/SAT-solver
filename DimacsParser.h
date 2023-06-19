@@ -1,6 +1,3 @@
-/**
- *  Dimacs parser.  解析cnf合取范式
- */
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
@@ -25,48 +22,67 @@ public:
             std::exit(1);
         }
 
-        int n = 0, m = 0; // n表示cnf中变量数目，m表示cnf中子句数目
-        // 逐字符读取文件内容，直到达到文件末尾或解析完cnf前两行
+        int literal_num = 0, clause_num = 0;
+        // 逐字符读取文件内容，直到达到文件末尾或解析完cnf的注释行(begin with c)和说明行(begin with p)
         while (!fin.eof()) {
             char ch;
-            fin >> ch;                  // 读取到的每个字符都保存到ch中
+            fin >> ch;                            // 读取到的每个字符都保存到ch中
 
-            if (ch == 'c') {            // 字符'c'表示注释
+            if (ch == 'c') {                      // 字符'c'表示注释
                 char buf[1024];
-                fin.getline(buf, 1024); // 读取注释并跳过注释行
-            } else if (ch == 'p') {     // 字符'p'表示一行指示信息，下一行开始为子句clause
+                fin.getline(buf, 1024);           // 读取注释并跳过注释行
+            } else if (ch == 'p') {               // 字符'p'表示一行指示信息，下一行开始为子句clause，读取完直接break
                 std::string buf;
-                fin >> buf;             // 读取下一个字符串
-                assert(buf == "cnf");   // 判断是否合法，如果为假，那么先向stderr打印一条出错信息，然后通过调用 abort 来终止程序运行。
-                fin >> n >> m;          // n表示cnf中变量数目，m表示cnf中子句数目
+                fin >> buf;                       // 读取下一个字符串
+                assert(buf == "cnf");             // 确保在'p'后读取到的字符串为"cnf"
+                fin >> literal_num >> clause_num; // n表示cnf中变量数目，m表示cnf中子句数目
                 break;
-            } else {                    // unexpected line
+            } else {                              // unexpected line
                 std::cerr << "parse error at char '" << ch << "'" << std::endl;
                 std::exit(1);
             }
         }
 
-        // clauses begin 开始解析子句
-        // 解析的子句存储在 std::vector<clause> clauses中，并返回一个包含完整 CNF 表达式的 formula 对象
-        std::vector<clause> clauses;
-        for (int i = 0; i < m; i++) {
-            clause c; // clause表示文字的析取，类型为vector<literal>，literal表示文字，int 类型
+        // start parsing clause
+        // clause 存储在 std::vector<clause> clauses 中，并返回一个包含完整 CNF formuila 的 formula 对象
+        clauses_t clauses;
+        for (int i = 0; i < clause_num; i++) {
+            clause_t c; // clause 表示文字的析取，typedef vector<literal> clause，using literal = int;
             while (!fin.eof()) {
                 int v;
                 fin >> v;
                 if (v == 0) {
-                    // 内部循环在读取到值为0的变量时终止，表示子句的结束
+                    // 内部循环在读取到值为0的变量时终止，0 is the end of a clause
                     clauses.push_back(c);
                     break;
                 }
-                assert(VAR(v) <= n); // 确保变量的值不超过 n，即不超过预期的变量数量；VAR给变量取绝对值
-                c.push_back(v);      // 如果v不为0，则将其添加到当前子句c中，并继续循环
+                assert(VAR(v) <= literal_num); // VAR给变量取绝对值,确保 literal 不超过 n，即不超过预期的变量数量；
+                c.insert(v);                   // 合法的 literal,加入到clause中
             }
         }
-        assert(clauses.size() == m); // 使用 assert 断言确保实际解析的子句数量等于预期的子句数量
+        assert(clauses.size() == static_cast<size_t>(clause_num)); // assert 断言确保实际解析的子句数量等于预期的子句数量
 
-        // 创建一个 formula 对象，将解析得到的变量数量 n 和子句向量 clauses 作为参数传递给构造函数，并将该对象返回
-        return formula(n, clauses);
+        // 创建一个 formula 对象，并返回该formula对象
+        return formula(literal_num, clause_num, clauses);
+    }
+
+    static clauses_t getClauses(formula &CNF_formula) {
+        return CNF_formula.clauses;
+    }
+
+    static void showClauses(formula &CNF_formula) {
+        std::cout << "===========  show CNF begin  ============" << std::endl;
+        std::cout << "CNF formula :"
+                  << "nbvar: " << CNF_formula.num_variables << ","
+                  << "nbclauses: " << CNF_formula.num_clauses << std::endl;
+
+        for (auto clause : CNF_formula.clauses) {
+            for (auto literal : clause) {
+                std::cout << literal << ' ';
+            }
+            std::cout << std::endl;
+        }
+        std::cout << "============  show CNF end   ============" << std::endl;
     }
 };
 

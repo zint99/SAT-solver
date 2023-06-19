@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joy/project/SAT-solver
+CMAKE_SOURCE_DIR = /home/joy/project/tiny_sat_solver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joy/project/SAT-solver/build
+CMAKE_BINARY_DIR = /home/joy/project/tiny_sat_solver/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joy/project/SAT-solver/build/CMakeFiles /home/joy/project/SAT-solver/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joy/project/tiny_sat_solver/build/CMakeFiles /home/joy/project/tiny_sat_solver/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joy/project/SAT-solver/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joy/project/tiny_sat_solver/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SatSolver
+# Target rules for targets named satSolver
 
 # Build rule for target.
-SatSolver: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 SatSolver
-.PHONY : SatSolver
+satSolver: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 satSolver
+.PHONY : satSolver
 
 # fast build rule for target.
-SatSolver/fast:
-	$(MAKE) -f CMakeFiles/SatSolver.dir/build.make CMakeFiles/SatSolver.dir/build
-.PHONY : SatSolver/fast
+satSolver/fast:
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/build
+.PHONY : satSolver/fast
 
-DPLL.o: DPLL.cpp.o
+DPLLsolver.o: DPLLsolver.cpp.o
 
-.PHONY : DPLL.o
+.PHONY : DPLLsolver.o
 
 # target to build an object file
-DPLL.cpp.o:
-	$(MAKE) -f CMakeFiles/SatSolver.dir/build.make CMakeFiles/SatSolver.dir/DPLL.cpp.o
-.PHONY : DPLL.cpp.o
+DPLLsolver.cpp.o:
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/DPLLsolver.cpp.o
+.PHONY : DPLLsolver.cpp.o
 
-DPLL.i: DPLL.cpp.i
+DPLLsolver.i: DPLLsolver.cpp.i
 
-.PHONY : DPLL.i
+.PHONY : DPLLsolver.i
 
 # target to preprocess a source file
-DPLL.cpp.i:
-	$(MAKE) -f CMakeFiles/SatSolver.dir/build.make CMakeFiles/SatSolver.dir/DPLL.cpp.i
-.PHONY : DPLL.cpp.i
+DPLLsolver.cpp.i:
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/DPLLsolver.cpp.i
+.PHONY : DPLLsolver.cpp.i
 
-DPLL.s: DPLL.cpp.s
+DPLLsolver.s: DPLLsolver.cpp.s
 
-.PHONY : DPLL.s
+.PHONY : DPLLsolver.s
 
 # target to generate assembly for a file
-DPLL.cpp.s:
-	$(MAKE) -f CMakeFiles/SatSolver.dir/build.make CMakeFiles/SatSolver.dir/DPLL.cpp.s
-.PHONY : DPLL.cpp.s
+DPLLsolver.cpp.s:
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/DPLLsolver.cpp.s
+.PHONY : DPLLsolver.cpp.s
 
 main.o: main.cpp.o
 
@@ -156,7 +156,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/SatSolver.dir/build.make CMakeFiles/SatSolver.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -165,7 +165,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/SatSolver.dir/build.make CMakeFiles/SatSolver.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -174,7 +174,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/SatSolver.dir/build.make CMakeFiles/SatSolver.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -184,11 +184,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... SatSolver"
+	@echo "... satSolver"
 	@echo "... edit_cache"
-	@echo "... DPLL.o"
-	@echo "... DPLL.i"
-	@echo "... DPLL.s"
+	@echo "... DPLLsolver.o"
+	@echo "... DPLLsolver.i"
+	@echo "... DPLLsolver.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
