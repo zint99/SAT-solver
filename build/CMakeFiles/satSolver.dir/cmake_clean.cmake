@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/satSolver.dir/main.cpp.o"
-  "CMakeFiles/satSolver.dir/DPLLsolver.cpp.o"
+  "CMakeFiles/satSolver.dir/src/main.cpp.o"
+  "CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o"
+  "CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o"
   "satSolver.pdb"
   "satSolver"
 )

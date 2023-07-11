@@ -6,5 +6,5 @@ CXX_FLAGS =  -O0 -Wall -g -ggdb   -std=gnu++1z
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/joy/project/tiny_sat_solver/include 
 

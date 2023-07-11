@@ -8,10 +8,19 @@ set(CMAKE_BUILD_TYPE "Debug")
 set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggdb")
 set(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS} -O2 -Wall")
 
-add_executable(satSolver 
-    main.cpp 
-    DPLLsolver.cpp 
-    DPLLsolver.h 
-    common.h 
-    DimacsParser.h
+set(SOURCES
+    src/main.cpp 
+    src/DPLLsolver.cpp 
+    src/CDCLsolver.cpp
 )
+
+set(HEADERS
+    include/DPLLsolver.h 
+    include/CDCLsolver.h
+    include/DimacsParser.h
+    include/common.h
+)
+
+add_executable(satSolver ${SOURCES} ${HEADERS})
+
+target_include_directories(satSolver PRIVATE include)

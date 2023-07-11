@@ -57,67 +57,93 @@ include CMakeFiles/satSolver.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/satSolver.dir/flags.make
 
-CMakeFiles/satSolver.dir/main.cpp.o: CMakeFiles/satSolver.dir/flags.make
-CMakeFiles/satSolver.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joy/project/tiny_sat_solver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/satSolver.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/satSolver.dir/main.cpp.o -c /home/joy/project/tiny_sat_solver/main.cpp
+CMakeFiles/satSolver.dir/src/main.cpp.o: CMakeFiles/satSolver.dir/flags.make
+CMakeFiles/satSolver.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joy/project/tiny_sat_solver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/satSolver.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/satSolver.dir/src/main.cpp.o -c /home/joy/project/tiny_sat_solver/src/main.cpp
 
-CMakeFiles/satSolver.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/satSolver.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joy/project/tiny_sat_solver/main.cpp > CMakeFiles/satSolver.dir/main.cpp.i
+CMakeFiles/satSolver.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/satSolver.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joy/project/tiny_sat_solver/src/main.cpp > CMakeFiles/satSolver.dir/src/main.cpp.i
 
-CMakeFiles/satSolver.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/satSolver.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joy/project/tiny_sat_solver/main.cpp -o CMakeFiles/satSolver.dir/main.cpp.s
+CMakeFiles/satSolver.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/satSolver.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joy/project/tiny_sat_solver/src/main.cpp -o CMakeFiles/satSolver.dir/src/main.cpp.s
 
-CMakeFiles/satSolver.dir/main.cpp.o.requires:
+CMakeFiles/satSolver.dir/src/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/satSolver.dir/main.cpp.o.requires
+.PHONY : CMakeFiles/satSolver.dir/src/main.cpp.o.requires
 
-CMakeFiles/satSolver.dir/main.cpp.o.provides: CMakeFiles/satSolver.dir/main.cpp.o.requires
-	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/main.cpp.o.provides.build
-.PHONY : CMakeFiles/satSolver.dir/main.cpp.o.provides
+CMakeFiles/satSolver.dir/src/main.cpp.o.provides: CMakeFiles/satSolver.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/satSolver.dir/src/main.cpp.o.provides
 
-CMakeFiles/satSolver.dir/main.cpp.o.provides.build: CMakeFiles/satSolver.dir/main.cpp.o
+CMakeFiles/satSolver.dir/src/main.cpp.o.provides.build: CMakeFiles/satSolver.dir/src/main.cpp.o
 
 
-CMakeFiles/satSolver.dir/DPLLsolver.cpp.o: CMakeFiles/satSolver.dir/flags.make
-CMakeFiles/satSolver.dir/DPLLsolver.cpp.o: ../DPLLsolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joy/project/tiny_sat_solver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/satSolver.dir/DPLLsolver.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/satSolver.dir/DPLLsolver.cpp.o -c /home/joy/project/tiny_sat_solver/DPLLsolver.cpp
+CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o: CMakeFiles/satSolver.dir/flags.make
+CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o: ../src/DPLLsolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joy/project/tiny_sat_solver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o -c /home/joy/project/tiny_sat_solver/src/DPLLsolver.cpp
 
-CMakeFiles/satSolver.dir/DPLLsolver.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/satSolver.dir/DPLLsolver.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joy/project/tiny_sat_solver/DPLLsolver.cpp > CMakeFiles/satSolver.dir/DPLLsolver.cpp.i
+CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joy/project/tiny_sat_solver/src/DPLLsolver.cpp > CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.i
 
-CMakeFiles/satSolver.dir/DPLLsolver.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/satSolver.dir/DPLLsolver.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joy/project/tiny_sat_solver/DPLLsolver.cpp -o CMakeFiles/satSolver.dir/DPLLsolver.cpp.s
+CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joy/project/tiny_sat_solver/src/DPLLsolver.cpp -o CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.s
 
-CMakeFiles/satSolver.dir/DPLLsolver.cpp.o.requires:
+CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o.requires:
 
-.PHONY : CMakeFiles/satSolver.dir/DPLLsolver.cpp.o.requires
+.PHONY : CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o.requires
 
-CMakeFiles/satSolver.dir/DPLLsolver.cpp.o.provides: CMakeFiles/satSolver.dir/DPLLsolver.cpp.o.requires
-	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/DPLLsolver.cpp.o.provides.build
-.PHONY : CMakeFiles/satSolver.dir/DPLLsolver.cpp.o.provides
+CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o.provides: CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o.requires
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o.provides.build
+.PHONY : CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o.provides
 
-CMakeFiles/satSolver.dir/DPLLsolver.cpp.o.provides.build: CMakeFiles/satSolver.dir/DPLLsolver.cpp.o
+CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o.provides.build: CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o
+
+
+CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o: CMakeFiles/satSolver.dir/flags.make
+CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o: ../src/CDCLsolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joy/project/tiny_sat_solver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o -c /home/joy/project/tiny_sat_solver/src/CDCLsolver.cpp
+
+CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joy/project/tiny_sat_solver/src/CDCLsolver.cpp > CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.i
+
+CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joy/project/tiny_sat_solver/src/CDCLsolver.cpp -o CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.s
+
+CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o.requires:
+
+.PHONY : CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o.requires
+
+CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o.provides: CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o.requires
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o.provides.build
+.PHONY : CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o.provides
+
+CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o.provides.build: CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o
 
 
 # Object files for target satSolver
 satSolver_OBJECTS = \
-"CMakeFiles/satSolver.dir/main.cpp.o" \
-"CMakeFiles/satSolver.dir/DPLLsolver.cpp.o"
+"CMakeFiles/satSolver.dir/src/main.cpp.o" \
+"CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o" \
+"CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o"
 
 # External object files for target satSolver
 satSolver_EXTERNAL_OBJECTS =
 
-satSolver: CMakeFiles/satSolver.dir/main.cpp.o
-satSolver: CMakeFiles/satSolver.dir/DPLLsolver.cpp.o
+satSolver: CMakeFiles/satSolver.dir/src/main.cpp.o
+satSolver: CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o
+satSolver: CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o
 satSolver: CMakeFiles/satSolver.dir/build.make
 satSolver: CMakeFiles/satSolver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/joy/project/tiny_sat_solver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable satSolver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/joy/project/tiny_sat_solver/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable satSolver"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/satSolver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -125,8 +151,9 @@ CMakeFiles/satSolver.dir/build: satSolver
 
 .PHONY : CMakeFiles/satSolver.dir/build
 
-CMakeFiles/satSolver.dir/requires: CMakeFiles/satSolver.dir/main.cpp.o.requires
-CMakeFiles/satSolver.dir/requires: CMakeFiles/satSolver.dir/DPLLsolver.cpp.o.requires
+CMakeFiles/satSolver.dir/requires: CMakeFiles/satSolver.dir/src/main.cpp.o.requires
+CMakeFiles/satSolver.dir/requires: CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o.requires
+CMakeFiles/satSolver.dir/requires: CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o.requires
 
 .PHONY : CMakeFiles/satSolver.dir/requires
 

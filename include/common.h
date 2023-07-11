@@ -25,9 +25,10 @@ using clauses_t = std::vector<clause_t>;
 struct formula {
     int num_variables;
     int num_clauses;
+    std::vector<std::pair<int, int>> freq;
     clauses_t clauses;
-    formula(int n, int m, const clauses_t &clauses) :
-        num_variables(n), num_clauses(m), clauses(clauses) {
+    formula(int n, int m, const clauses_t &clauses, const std::vector<std::pair<int, int>> &frequency) :
+        num_variables(n), num_clauses(m), clauses(clauses), freq(frequency) {
     }
 };
 

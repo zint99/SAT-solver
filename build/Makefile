@@ -123,59 +123,86 @@ satSolver/fast:
 	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/build
 .PHONY : satSolver/fast
 
-DPLLsolver.o: DPLLsolver.cpp.o
+src/CDCLsolver.o: src/CDCLsolver.cpp.o
 
-.PHONY : DPLLsolver.o
-
-# target to build an object file
-DPLLsolver.cpp.o:
-	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/DPLLsolver.cpp.o
-.PHONY : DPLLsolver.cpp.o
-
-DPLLsolver.i: DPLLsolver.cpp.i
-
-.PHONY : DPLLsolver.i
-
-# target to preprocess a source file
-DPLLsolver.cpp.i:
-	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/DPLLsolver.cpp.i
-.PHONY : DPLLsolver.cpp.i
-
-DPLLsolver.s: DPLLsolver.cpp.s
-
-.PHONY : DPLLsolver.s
-
-# target to generate assembly for a file
-DPLLsolver.cpp.s:
-	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/DPLLsolver.cpp.s
-.PHONY : DPLLsolver.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
+.PHONY : src/CDCLsolver.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/main.cpp.o
-.PHONY : main.cpp.o
+src/CDCLsolver.cpp.o:
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.o
+.PHONY : src/CDCLsolver.cpp.o
 
-main.i: main.cpp.i
+src/CDCLsolver.i: src/CDCLsolver.cpp.i
 
-.PHONY : main.i
+.PHONY : src/CDCLsolver.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/main.cpp.i
-.PHONY : main.cpp.i
+src/CDCLsolver.cpp.i:
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.i
+.PHONY : src/CDCLsolver.cpp.i
 
-main.s: main.cpp.s
+src/CDCLsolver.s: src/CDCLsolver.cpp.s
 
-.PHONY : main.s
+.PHONY : src/CDCLsolver.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/main.cpp.s
-.PHONY : main.cpp.s
+src/CDCLsolver.cpp.s:
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/src/CDCLsolver.cpp.s
+.PHONY : src/CDCLsolver.cpp.s
+
+src/DPLLsolver.o: src/DPLLsolver.cpp.o
+
+.PHONY : src/DPLLsolver.o
+
+# target to build an object file
+src/DPLLsolver.cpp.o:
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.o
+.PHONY : src/DPLLsolver.cpp.o
+
+src/DPLLsolver.i: src/DPLLsolver.cpp.i
+
+.PHONY : src/DPLLsolver.i
+
+# target to preprocess a source file
+src/DPLLsolver.cpp.i:
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.i
+.PHONY : src/DPLLsolver.cpp.i
+
+src/DPLLsolver.s: src/DPLLsolver.cpp.s
+
+.PHONY : src/DPLLsolver.s
+
+# target to generate assembly for a file
+src/DPLLsolver.cpp.s:
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/src/DPLLsolver.cpp.s
+.PHONY : src/DPLLsolver.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/satSolver.dir/build.make CMakeFiles/satSolver.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -186,12 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... satSolver"
 	@echo "... edit_cache"
-	@echo "... DPLLsolver.o"
-	@echo "... DPLLsolver.i"
-	@echo "... DPLLsolver.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... src/CDCLsolver.o"
+	@echo "... src/CDCLsolver.i"
+	@echo "... src/CDCLsolver.s"
+	@echo "... src/DPLLsolver.o"
+	@echo "... src/DPLLsolver.i"
+	@echo "... src/DPLLsolver.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 

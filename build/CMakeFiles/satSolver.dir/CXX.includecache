@@ -6,23 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/home/joy/project/tiny_sat_solver/DPLLsolver.cpp
-DPLLsolver.h
-/home/joy/project/tiny_sat_solver/DPLLsolver.h
-iostream
+/home/joy/project/tiny_sat_solver/include/CDCLsolver.h
+common.h
+/home/joy/project/tiny_sat_solver/include/common.h
+vector
+-
+set
+-
+stack
+-
+map
+-
+ostream
+-
+iterator
+-
+random
 -
 algorithm
 -
 
-/home/joy/project/tiny_sat_solver/DPLLsolver.h
+/home/joy/project/tiny_sat_solver/include/DPLLsolver.h
 common.h
-/home/joy/project/tiny_sat_solver/common.h
+/home/joy/project/tiny_sat_solver/include/common.h
 vector
 -
 set
 -
 
-/home/joy/project/tiny_sat_solver/DimacsParser.h
+/home/joy/project/tiny_sat_solver/include/DimacsParser.h
 iostream
 -
 fstream
@@ -32,9 +44,11 @@ cstdlib
 cassert
 -
 common.h
-/home/joy/project/tiny_sat_solver/common.h
+/home/joy/project/tiny_sat_solver/include/common.h
+algorithm
+-
 
-/home/joy/project/tiny_sat_solver/common.h
+/home/joy/project/tiny_sat_solver/include/common.h
 vector
 -
 set
@@ -46,13 +60,35 @@ string
 sstream
 -
 
-/home/joy/project/tiny_sat_solver/main.cpp
+/home/joy/project/tiny_sat_solver/src/CDCLsolver.cpp
+../include/CDCLsolver.h
+/home/joy/project/tiny_sat_solver/include/CDCLsolver.h
+../include/common.h
+/home/joy/project/tiny_sat_solver/include/common.h
+iostream
+-
+
+/home/joy/project/tiny_sat_solver/src/DPLLsolver.cpp
+../include/DPLLsolver.h
+/home/joy/project/tiny_sat_solver/include/DPLLsolver.h
+iostream
+-
+algorithm
+-
+
+/home/joy/project/tiny_sat_solver/src/main.cpp
 chrono
 -
-common.h
-/home/joy/project/tiny_sat_solver/common.h
-DimacsParser.h
-/home/joy/project/tiny_sat_solver/DimacsParser.h
-DPLLsolver.h
-/home/joy/project/tiny_sat_solver/DPLLsolver.h
+string
+-
+cstring
+-
+../include/common.h
+/home/joy/project/tiny_sat_solver/include/common.h
+../include/DimacsParser.h
+/home/joy/project/tiny_sat_solver/include/DimacsParser.h
+../include/DPLLsolver.h
+/home/joy/project/tiny_sat_solver/include/DPLLsolver.h
+../include/CDCLsolver.h
+/home/joy/project/tiny_sat_solver/include/CDCLsolver.h
 
